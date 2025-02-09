@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">HealthCare MS</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:text-blue-200">Home</a></li>
+                <li><a href="#patients" class="text-white hover:text-blue-200">Patients</a></li>
+                <li><a href="#appointments" class="text-white hover:text-blue-200">Appointments</a></li>
+                <li><a href="#" class="text-white hover:text-blue-200">Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-500 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to HealthCare Management System</h1>
+            <p class="text-xl mb-8">Streamline your healthcare operations with our efficient management system.</p>
+            <a href="#" class="bg-white text-blue-500 py-2 px-6 rounded-full font-bold hover:bg-blue-100">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Patient Management Section -->
+    <section id="patients" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Patient Management</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Patient List</h3>
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="p-2 text-left">Name</th>
+                            <th class="p-2 text-left">Age</th>
+                            <th class="p-2 text-left">Gender</th>
+                            <th class="p-2 text-left">Last Visit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-2">John Doe</td>
+                            <td class="p-2">45</td>
+                            <td class="p-2">Male</td>
+                            <td class="p-2">2023-05-15</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                            <td class="p-2">Jane Smith</td>
+                            <td class="p-2">32</td>
+                            <td class="p-2">Female</td>
+                            <td class="p-2">2023-06-02</td>
+                        </tr>
+                        <!-- Add more patient rows as needed -->
+                    </tbody>
+                </table>
+                <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add New Patient</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Scheduling Section -->
+    <section id="appointments" class="py-16 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Appointment Scheduling</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Schedule an Appointment</h3>
+                <form>
+                    <div class="mb-4">
+                        <label for="patient" class="block mb-2">Patient Name</label>
+                        <input type="text" id="patient" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="doctor" class="block mb-2">Doctor</label>
+                        <select id="doctor" class="w-full p-2 border rounded" required>
+                            <option value="">Select a doctor</option>
+                            <option value="dr-smith">Dr. Smith</option>
+                            <option value="dr-johnson">Dr. Johnson</option>
+                            <option value="dr-williams">Dr. Williams</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="date" class="block mb-2">Date</label>
+                        <input type="date" id="date" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="time" class="block mb-2">Time</label>
+                        <input type="time" id="time" class="w-full p-2 border rounded" required>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Schedule Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 HealthCare Management System. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-blue-200 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-blue-200 hover:text-white mx-2">Terms of Service</a>
+                <a href="#" class="text-blue-200 hover:text-white mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
